@@ -1,0 +1,16 @@
+{
+  "name": "stephanschuler/from-php",
+  "description": "Create configuration files based on PHP source data",
+  "type": "project",
+  "license": "MIT",
+  "readme": "README.md",
+  "authors": [
+    {
+      "name": "Stephan Schuler",
+      "email": "stephan.schuler@netlogix.de"
+    }
+  ],
+  "require": {
+    "php": "~7.2"
+  }
+}
