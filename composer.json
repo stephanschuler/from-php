@@ -11,6 +11,13 @@
     }
   ],
   "require": {
-    "php": "~7.2"
+    "php": "~7.2",
+    "ext-json": "*",
+    "symfony/yaml": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "StephanSchuler\\FromPhp\\": "src"
+    }
   }
 }

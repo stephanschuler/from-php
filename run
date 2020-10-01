@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+use StephanSchuler\FromPhp\Dumper;
+use StephanSchuler\FromPhp\FromPhp;
+
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$dumpers = [
+    Dumper\Json::class,
+    Dumper\Yaml::class
+];
+
+FromPhp::create($argv[1])
+    ->registerDumpers(...$dumpers)
+    ->fetchContent()
+    ->write();
